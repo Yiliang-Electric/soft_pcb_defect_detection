@@ -118,11 +118,12 @@ The system will:
 
 The system detects defect types such as:
 
-* Smears
-* Bleed out
-* Voids
-* Dewetted / Peeling
-* Debris
+* smear
+* bleed
+* voids
+* peeling
+* debris
+* exposed
 
 ---
 
