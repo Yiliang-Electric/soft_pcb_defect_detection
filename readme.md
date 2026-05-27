@@ -50,7 +50,7 @@ For GigE cameras, make sure:
 Use this command when you want to capture PCB images for training or testing:
 
 ```bash
-python data_collection.py
+python data_capture.py
 ```
 
 After running the file, the Basler camera live window will open.
