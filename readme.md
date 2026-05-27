@@ -9,16 +9,9 @@ This project provides two main functions:
 
 ---
 
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/Yiliang-Electric/Soft-PCB-Defect-Detection.git
-cd Soft-PCB-Defect-Detection
-````
-
 ---
 
-## 2. Create Virtual Environment
+## 1. Create Virtual Environment
 
 ```bash
 python3 -m venv venv
@@ -26,7 +19,7 @@ source venv/bin/activate
 ```
 
 
-## 3. Install Required Packages
+## 2. Install Required Packages
 
 ```bash
 pip install -r requirements.txt
@@ -39,7 +32,7 @@ pip install pypylon
 ```
 ---
 
-## 4. Check Basler Camera Connection
+## 3. Check Basler Camera Connection
 
 Before running the Python file, open **Basler pylon Viewer** and confirm that the camera is detected.
 
@@ -52,12 +45,12 @@ For GigE cameras, make sure:
 
 ---
 
-## 5. Run Data Collection
+## 4. Run Data Collection
 
 Use this command when you want to capture PCB images for training or testing:
 
 ```bash
-python data_collection.py
+python data_capture.py
 ```
 
 After running the file, the Basler camera live window will open.
@@ -82,7 +75,7 @@ data_collection/17162.png
 ```
 ---
 
-## 6. Run Defect Detection
+## 5. Run Defect Detection
 
 Make sure your trained YOLO model file is placed inside the project folder.
 
@@ -121,19 +114,20 @@ The system will:
 
 ---
 
-## 7. Expected Detection Classes
+## 6. Expected Detection Classes
 
 The system detects defect types such as:
 
-* Smears
-* Bleed out
-* Voids
-* Dewetted / Peeling
-* Debris
+* smear
+* bleed
+* voids
+* peeling
+* debris
+* exposed
 
 ---
 
-## 8. Exit the Program
+## 7. Exit the Program
 
 To stop the program, press:
 
@@ -145,7 +139,7 @@ or close the display window.
 
 ---
 
-## 9. Troubleshooting
+## 8. Troubleshooting
 
 ### Basler Camera Not Detected
 
@@ -214,3 +208,6 @@ Possible reasons:
 
 ```
 ```
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
